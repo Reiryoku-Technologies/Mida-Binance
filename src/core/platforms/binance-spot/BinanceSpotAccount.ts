@@ -577,8 +577,14 @@ export function normalizeTimeframeForBinance (timeframe: number): string {
         case 3600: {
             return "1h";
         }
-        case 14400: {
+        case 7200: {
             return "2h";
+        }
+        case 14400: {
+            return "4h";
+        }
+        case 21600: {
+            return "6h";
         }
         case 43200: {
             return "12h";
